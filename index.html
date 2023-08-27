@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tc Grills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="styles.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+    <div class="w3-center w3-padding-16" >Tc Grills</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="Burger2.jpeg" alt="burger" style="width:100%">
+      <h3>Tc Burger</h3>
+      <p> <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button></a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="spagh&turkey.jpeg" alt="spagh" style="width:100%">
+      <h3>Tc stir fry spaghetti and turkey</h3>
+      <p>  <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button> </a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="ofada.jpeg" alt="ofada" style="width:100%">
+      <h3>Tc Ofada rice, ofada sauce and egg.</h3>
+      <p>  <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button></a></p>
+      <!-- <p>What else?</p> -->
+    </div>
+    <div class="w3-quarter">
+      <img src="villagerice.jpeg" alt="nativerice" style="width:100%">
+      <h3>Tc Native rice</h3>
+      <p> <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button> </a></p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="yam&egg.jpeg" alt="yam&egg" style="width:100%">
+      <h3>Yam & egg</h3>
+      <p>  <a href="#" target="_blank"></a><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button> </a> </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Asun.jpeg" alt="Asun" style="width:100%">
+      <h3>Asun</h3>
+      <p>  <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button> </a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="friedrice&turkey.jpeg" alt="friedrice&turkey" style="width:100%">
+      <h3>friedrice & turkey</h3>
+      <p> <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button> </a></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="jollof.jpeg" alt="jollof" style="width:100%">
+      <h3>jollof rice</h3>
+      <p>  <a href="#" target="_blank"><button class="btn btn-block" id="send-button">Order now!!
+        <i class="fas fa-mail"></i>
+      </button></a></p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About Tc Grills</h3><br>
+    <img src="tclogo.jpeg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+     <!-- <h4><b>WORTH EVERY BITE!</b></h4> -->
+      <h6><i>WORTH EVERY BITE!</i></h6>
+      <p>We are a food company that sells sumptuous meals and grills. We cater for events both indoor and outdoor. We also make food trays and deliver to your loved ones. We’re located in the tanke ilorin</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Contact us</h3>
+      <p>We are always available to take your orders for yourself or a gathering. We also cater for events.</p>
+      <p><a href="#" target="_blank">talk to us </a></p>
+    </div>
+    <div class="w3-third">
+      <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">You can also reach us here</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <a href="Www.instagram.com/tcgrills" class="btn contact-details" id="footer-link">
+            <i class="bi bi-instagram"></i> Instagram</a>
+        </li>
+        <li class="w3-padding-16">
+          <a href="https://twitter.com/tcgrills8?s=11&t=f8EhGUnfDT2oLbrHNNtCoQ"
+          class="btn contact-details" id="footer-link">
+        <i class="fab fa-twitter"></i> Twitter</a>
+        </li> 
+        <li>
+          <a href="mailto:tcluxurystore@yahoo.com" class="btn contact-details" id="footer-link">
+            <i class="fas fa-at"></i>Send a mail</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+  <p id="the-end" style="text-align: center; margin-top: 50px;"> 
+    &copy; Adeniran Nimota. All rights reserved.</p>
+</footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
